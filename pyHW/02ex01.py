@@ -40,7 +40,10 @@ def deposit(initial_sum, percent, fixed_period, set_period):
     """Calculate deposit yield."""
     per = percent / 100
     growth = (1 + per) ** (set_period / fixed_period)
-    
+    growth = (1 + per) ** (1/12)
+    growth = (1 + per) ** (2)
+    growth = (1 + per) ** (5)
+    growth = (1 + per) ** (10)
     return initial_sum * growth
 
 
